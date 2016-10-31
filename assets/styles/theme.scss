@@ -1,0 +1,33 @@
+$background-color: $paper-white;
+$font-color: $charcoal;
+
+
+//body {
+  //color: #444;
+  //font-size: 18px;
+  //line-height: 1.6;
+  //margin: 40px auto;
+  //max-width: 650px;
+  //padding: 0 10px }
+//h1,h2,h3 {
+  //line-height: 1.2}
+//declaring variables
+//keep in topography
+//could seperate concerns a bit more consistently in terms of new file for each seperate situation
+
+
+body {
+  background-color: $background-color;
+  color: $font-color;
+}
+//using the variables
+
+$quote-background-color: shade($background-color);
+$quote-border-radius: 10px;
+$quote-font-size: ($font-size * 1.667);
+
+.quote {
+  background-color: $quote-background-color; // lilac
+  border-radius: $quote-border-radius;
+  font-size: $quote-font-size;
+}

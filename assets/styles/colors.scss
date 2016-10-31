@@ -1,0 +1,28 @@
+$paper-white: #fefefe;
+$charcoal: #4e4e4e;
+//renamed variable color names
+$lilac: #86608e;
+$quote-background-color: shade($lilac, 50%);
+
+//mix-ins only have to do with colors so color.scss is a good place to place them
+$white: #fff;
+$black: #000;
+
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix($white, $color, $percentage);
+}
+// not native scss fxn -not using it yet
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix($black, $color, $percentage);
+}
